@@ -18,12 +18,12 @@ $(document).ready(function () {
                     },
                 });
             request.then(function (response) {
-                if (response.status == "success" && response.data.errors.length == 0) {
+                if (response.status === "success" && response.data.errors.length == 0) {
                     $(".OneClickInput").hide();
                     $(".OneClickMessage").text("Заказ принят!").show();
                 } else {
                     $(".OneClickInput").hide();
-                    $(".OneClickMessage").text("Заказ не принят!").show();
+                    $(".OneClickMessage").text(response.data.errors).show();
                 }
             });
         })

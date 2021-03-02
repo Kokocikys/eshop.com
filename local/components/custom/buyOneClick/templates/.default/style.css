@@ -4,3 +4,7 @@
 .OneClickMessage {
     display : none;
 }
+.OneClick {
+    margin: 20px;
+    display: flex;
+}

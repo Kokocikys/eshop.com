@@ -9,7 +9,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
         <lable>Введите ваш номер телефона:</lable>
         <br>
         <input class="OneClickPhone">
-        <button class="FormSubmit" data-id-element="12">Заказать</button>
+        <button class="FormSubmit" data-id-element="<?=$arParams["PRODUCT_ID"]?>">Заказать</button>
     </div>
     <div class="OneClickMessage"></div>
 </div>
